@@ -28,14 +28,18 @@ public class Coche {
 			resultado += metodoA(modelo, fabricante);
 		} else if (combustible == "Diesel") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoB(modelo, fabricante);
+			resultado += metodoA(modelo, fabricante);
 		} else if (combustible == "Híbrido") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoC(modelo, fabricante);
+			resultado += metodoA(modelo, fabricante);
 		} else {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += "no dispone de información";
 		}
 		return resultado;
+	}
+
+	private String metodoA(String modelo, String fabricante) {
+		return "Modelo: " + modelo + "Fabricante: " + fabricante;
 	}
 }
