@@ -13,7 +13,7 @@ public class Moto {
 		matricula = m;
 		cilindrada = c;
 	}  
-
+ 
 	public String getMatricula() {
 		return matricula;
 	}
