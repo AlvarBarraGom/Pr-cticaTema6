@@ -7,7 +7,7 @@ public class Moto {
 	public Moto() {
 		matricula = "";
 		cilindrada = 0;
-	}  
+	} 
 
 	public Moto(String m, int c) {
 		matricula = m;
