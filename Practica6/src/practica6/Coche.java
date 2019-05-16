@@ -1,6 +1,7 @@
 package practica6;
 
 public class Coche {
+	public static final String EL_COCHE_CON_MATRICULA = "El coche con matricula ";
 	String matricula;
 	String combustible;
 	String modelo;
@@ -23,16 +24,16 @@ public class Coche {
 	public String metodo1() {
 		String resultado = "";
 		if (combustible == "Gasolina") {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoA(modelo, fabricante);
 		} else if (combustible == "Diesel") {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoB(modelo, fabricante);
 		} else if (combustible == "Híbrido") {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += metodoC(modelo, fabricante);
 		} else {
-			resultado += "El coche con matricula " + matricula + " ";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
 			resultado += "no dispone de información";
 		}
 		return resultado;
